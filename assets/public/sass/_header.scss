@@ -1,0 +1,106 @@
+.barra-navegacion{
+    background-color: $fondo_oscuro;
+    padding-left: 50px;
+    padding-right: 50px;
+    img{
+        width: 60px;
+    }
+    .navbar-toggler{
+        i{
+            color:#fff;
+        }
+    }
+    .navbar-nav{
+        .login{
+            .modal-content{
+                border: 1px solid rgb(226, 226, 230);
+                .modal-header{
+                    border-bottom-width: 0;
+                    h1{
+                        font-family: $fuente_titulos;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+                
+                label{
+                    text-align: start;
+                    font-family: $fuente_titulos;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+                .boton-login{
+                        @include boton($color_principal, #fff, 0, $fuente_textos, 0.875rem, 400, 12px 22px, 100%, 0px, $fondo_oscuro, #fff, 0)
+                }
+                .modal-footer{
+                    border-top-width: 0;
+                }
+
+            }
+           
+        }
+        gap: 20px;
+        a{
+            color: #fff;
+            font-family: $fuente_textos;
+            font-weight: 400;
+            font-size: 1rem;
+            &:hover{
+                background-color: $color_principal;
+                border-radius: 5px;
+                color:#fff;
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+    }
+    .hero-section {
+        @include hero(url('../imgs/home-slider-1.jpg'), #fff, 100px 0, calc(100vh - 80px) );
+            .overlay {
+                @include overlay(rgba(0, 0, 0, 0.5))
+              }
+        h1{
+            position: relative;
+            font-family: $fuente_titulos;
+            color:#fff;
+            font-weight: 500;
+            z-index: 5;
+            text-align: center;
+        }
+      }
+      .buscar-titulo-movil{
+        @include estilo-texto($fuente_titulos, calc(1.2rem + 1vw), 800, #fff);
+        background-color: $color_principal;
+      }
+     
+      .accordion-button:not(.collapsed){
+        background-color: $color_principal;
+        color: #fff;
+       
+      }
+      .busqueda{
+        background-color: $color_principal;
+        h2{
+            @include estilo-texto($fuente_titulos, calc(1.2rem + 1vw), 800, #fff);
+        }
+        label{
+            @include estilo-texto($fuente_textos, 1rem, 600, #fff);
+            margin-bottom: 0;
+        }
+        
+        select, input{
+            height: 45px;
+            border-radius: 0;
+            @include estilo-texto($fuente_textos, 0.875rem, 400, #fff);
+            background-color: $color_principal;
+        }
+        input:focus{
+            background-color: $color_principal;
+            color: #fff;
+        }
+        option{
+            background-color: black;
+        }
+      }    

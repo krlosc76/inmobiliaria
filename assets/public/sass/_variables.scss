@@ -1,0 +1,45 @@
+// FUENTES
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+$fuente_titulos: "montserrat";
+
+
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato/Lato-Thin.ttf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato/Lato-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato/Lato-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato/Lato-Black.ttf");
+    font-weight: 900;
+}
+$fuente_textos: "lato";
+
+//Colores
+$color_principal: #0098ef;
+$fondo: #edeff1;
+$fondo_oscuro: #121b11;
+$color_titulos: #444444;
+$color_textos: #777777;
+
+//Tamaño textos
+$size_titulos: calc(1.5rem + 1vw);
+

@@ -1,0 +1,20 @@
+// Pantallas mayores a 992 px
+
+@media (min-width: 992px) { 
+    .accordion .collapse {
+        display: block;
+        height: auto !important;
+        visibility: visible;
+    }
+    .contactar{
+        background-color: #fff;
+        border: 1px solid rgb(222, 226, 230);
+    }
+ }
+
+ //Pantallas menores a 992 px
+//  @media (max-width: 992px) { 
+//     .busqueda{
+//         display: none;
+//     }
+// }

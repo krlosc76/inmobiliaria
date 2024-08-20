@@ -1,0 +1,20 @@
+{
+    "name": "sistema-inmobiliario",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile:sass": "sass assets/public/sass/style.scss assets/public/css/style.css -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.77.2"
+    },
+    "dependencies": {
+        "admin-lte": "^3.2.0",
+        "bootstrap": "^5.2.3"
+    }
+}

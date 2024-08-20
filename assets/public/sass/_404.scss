@@ -1,0 +1,12 @@
+.not-found{
+    height: 60vh;
+    h2{
+        @include estilo-texto($fuente_textos, calc(7rem + 1vw), 700, $color_principal);
+    }
+    h3{
+        @include estilo-texto($fuente_titulos, calc(1.5rem + 1vw), 600, #000);
+    }
+    p{
+        @include estilo-texto($fuente_textos, 1.5 rem, 400, $color_textos);
+    };
+}

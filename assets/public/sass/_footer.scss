@@ -1,0 +1,6 @@
+footer{
+    padding: 20px 0;
+    background-color: $color_principal;
+    text-align: center;
+    @include estilo-texto($fuente_textos, 1rem, 400, #fff)
+}

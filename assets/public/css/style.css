@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Black.ttf");
+  font-weight: 900;
+}
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+html .boton {
+  background-color: #121b11;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-family: "lato";
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 12px 22px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 0px;
+}
+html .boton:hover {
+  background-color: #121b11;
+  color: #fff;
+  border-color: 0;
+}
+html a {
+  text-decoration: none;
+}
+html li {
+  list-style-type: none;
+}
+html body {
+  background-color: #edeff1;
+}
+html body .titulo-seccion {
+  font-family: "montserrat";
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0098ef;
+}
+html body .subtitulo-seccion {
+  font-family: "montserrat";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444444;
+}
+html body .hero-interno {
+  position: relative;
+  background-image: url("/imgs/home-slider-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: 35vh;
+}
+html body .hero-interno .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html body .hero-interno h1 {
+  position: relative;
+  font-family: "montserrat";
+  font-family: "montserrat";
+  font-size: calc(1.5rem + 1vw);
+  font-weight: 800;
+  color: #fff;
+}
+html body .pagination {
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0098ef;
+}
+html body .pagination li:hover {
+  background-color: #0098ef;
+}
+html body .estado {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 15px;
+  font-family: "lato";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+html body .venta {
+  background-color: #18ba60;
+}
+html body .arriendo {
+  background-color: #3a2c5f;
+}
+html body .form-control {
+  border-radius: 0;
+}
+html body .alert {
+  z-index: 10 !important;
+  top: 100px !important;
+  right: 50%;
+  transition: opacity 5s ease-out;
+  text-align: center;
+  position: fixed;
+  transform: translate(50%);
+}
+html body .hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 992px) {
+  .accordion .collapse {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+  .contactar {
+    background-color: #fff;
+    border: 1px solid rgb(222, 226, 230);
+  }
+}
+.barra-navegacion {
+  background-color: #121b11;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.barra-navegacion img {
+  width: 60px;
+}
+.barra-navegacion .navbar-toggler i {
+  color: #fff;
+}
+.barra-navegacion .navbar-nav {
+  gap: 20px;
+}
+.barra-navegacion .navbar-nav .login .modal-content {
+  border: 1px solid rgb(226, 226, 230);
+}
+.barra-navegacion .navbar-nav .login .modal-content .modal-header {
+  border-bottom-width: 0;
+}
+.barra-navegacion .navbar-nav .login .modal-content .modal-header h1 {
+  font-family: "montserrat";
+  font-weight: 600;
+  text-align: center;
+}
+.barra-navegacion .navbar-nav .login .modal-content label {
+  text-align: start;
+  font-family: "montserrat";
+  font-weight: 500;
+  font-size: 1rem;
+}
+.barra-navegacion .navbar-nav .login .modal-content .boton-login {
+  background-color: #0098ef;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-family: "lato";
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 12px 22px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 0px;
+}
+.barra-navegacion .navbar-nav .login .modal-content .boton-login:hover {
+  background-color: #121b11;
+  color: #fff;
+  border-color: 0;
+}
+.barra-navegacion .navbar-nav .login .modal-content .modal-footer {
+  border-top-width: 0;
+}
+.barra-navegacion .navbar-nav a {
+  color: #fff;
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 1rem;
+}
+.barra-navegacion .navbar-nav a:hover {
+  background-color: #0098ef;
+  border-radius: 5px;
+  color: #fff;
+}
+.barra-navegacion .navbar-nav a i {
+  margin-right: 5px;
+}
+
+.hero-section {
+  position: relative;
+  background-image: url("../imgs/home-slider-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: calc(100vh - 80px);
+}
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-section h1 {
+  position: relative;
+  font-family: "montserrat";
+  color: #fff;
+  font-weight: 500;
+  z-index: 5;
+  text-align: center;
+}
+
+.buscar-titulo-movil {
+  font-family: "montserrat";
+  font-size: calc(1.2rem + 1vw);
+  font-weight: 800;
+  color: #fff;
+  background-color: #0098ef;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0098ef;
+  color: #fff;
+}
+
+.busqueda {
+  background-color: #0098ef;
+}
+.busqueda h2 {
+  font-family: "montserrat";
+  font-size: calc(1.2rem + 1vw);
+  font-weight: 800;
+  color: #fff;
+}
+.busqueda label {
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+.busqueda select, .busqueda input {
+  height: 45px;
+  border-radius: 0;
+  font-family: "lato";
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #0098ef;
+}
+.busqueda input:focus {
+  background-color: #0098ef;
+  color: #fff;
+}
+.busqueda option {
+  background-color: black;
+}
+
+.destacados .seccion-titulo {
+  position: relative;
+}
+
+.homes {
+  position: relative;
+  border-bottom: 1px solid #0098ef;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+}
+.homes img {
+  width: 100%;
+}
+.homes .homes-body {
+  background-color: #fff;
+  padding: 20px;
+}
+.homes .homes-body .homes-titulo {
+  font-family: "montserrat";
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #444444;
+}
+.homes .homes-body .homes-caracteristicas {
+  padding-left: 0;
+}
+.homes .homes-body .homes-caracteristicas span {
+  font-family: "lato";
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #444444;
+}
+.homes .homes-body .homes-precio {
+  font-family: "montserrat";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #777777;
+}
+
+.galeria {
+  position: relative;
+}
+.galeria h2 {
+  font-family: "lato";
+  font-size: calc(1rem + 1vw);
+  font-weight: 600;
+  color: #444444;
+}
+.galeria .galeria-info {
+  background-color: #121b11;
+  color: #fff;
+  text-align: center;
+}
+.galeria .galeria-info li {
+  color: #0098ef;
+}
+.galeria .galeria-info li span {
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.descripcion-titulo {
+  font-family: "montserrat";
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+.descripcion-titulo:after {
+  content: "";
+  background-color: #0098ef;
+  color: #0098ef;
+  display: block;
+  height: 3px;
+  width: 50px;
+}
+
+.descripcion-parrafo {
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+}
+
+.caracteristicas ul li {
+  color: #0098ef;
+}
+.caracteristicas ul li span {
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+}
+
+.ubicacion iframe {
+  max-width: 100%;
+}
+
+.contactar img {
+  width: 100px;
+  border-radius: 50%;
+}
+.contactar .nombre-agente {
+  font-family: "montserrat";
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0098ef;
+}
+.contactar i {
+  color: #0098ef;
+  margin-right: 10px;
+}
+.contactar label {
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #777777;
+  margin-bottom: 0;
+}
+
+.not-found {
+  height: 60vh;
+}
+.not-found h2 {
+  font-family: "lato";
+  font-size: calc(7rem + 1vw);
+  font-weight: 700;
+  color: #0098ef;
+}
+.not-found h3 {
+  font-family: "montserrat";
+  font-size: calc(1.5rem + 1vw);
+  font-weight: 600;
+  color: #000;
+}
+.not-found p {
+  font-family: "lato";
+  font-size: 1.5 rem;
+  font-weight: 400;
+  color: #777777;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #0098ef;
+  text-align: center;
+  font-family: "lato";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+ASSETS: incluir archivos css, js, imagenes, fonts, iconos, etc...
+CONFIG/db.php : Actualizar información base de datos
+CONFIG/parameters.php: Actualizar directorio principal página, clase y método a mostrarse por defecto
+CONTROLLERS: Todas las clases del controlador, una clase por archivo la cual debe llamarse igual que el archivo
+MODELLS: las clases para conectarse a la base de datos
+VIEWS: las vistas del frontend del proyecto
+DATABASE: Incluir el archivo sql de la base de datos
+.htaccess:  Reescribir las reglas oermite mostras la estrucutura clase/metodo en la url
+autoload.php:  Cargar las clases de manera automatica en el index.php
+index.php : vista principal segun las clases y metodos que se carguen por la url

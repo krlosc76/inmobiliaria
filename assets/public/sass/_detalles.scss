@@ -1,0 +1,67 @@
+
+.galeria{
+    position: relative;
+    h2{
+        @include estilo-texto($fuente_textos, calc(1rem + 1vw), 600, $color_titulos);
+        
+    }
+    .galeria-info{
+        background-color: $fondo_oscuro;
+        color: #fff;
+        text-align: center;
+        li{
+            color: $color_principal;
+            span{
+                @include estilo-texto($fuente_textos, 1rem, 400, #fff);
+            }
+        }
+    }
+}
+
+    .descripcion-titulo{
+        @include estilo-texto($fuente_titulos, 1.1rem, 600, #000);
+        &:after{
+            content: "";
+            background-color: $color_principal;
+            color: $color_principal;
+            display: block;
+            height: 3px;
+            width: 50px;
+        }
+    }
+    .descripcion-parrafo{
+        @include estilo-texto($fuente_textos, 1rem, 400, $color_textos);
+    }
+.caracteristicas{
+    ul{
+        li{
+            color: $color_principal;
+            span{
+                @include estilo-texto($fuente_textos, 1rem, 400, $color_textos);  
+        }
+        }
+       
+    }
+}
+.ubicacion{
+    iframe{
+        max-width: 100%;
+    }
+}
+.contactar{
+ img{
+    width: 100px;
+    border-radius: 50%;
+}
+.nombre-agente{
+        @include estilo-texto($fuente_titulos, 1rem, 800, $color_principal);  
+}
+i{
+    color: $color_principal;
+    margin-right: 10px;
+}
+label{
+    @include estilo-texto($fuente_textos, 1rem, 600, $color_textos);
+    margin-bottom: 0;
+}
+}

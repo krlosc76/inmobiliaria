@@ -1,0 +1,26 @@
+.homes{
+    position: relative;
+    border-bottom: 1px solid $color_principal;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+    img{
+        width:100%;
+    }
+    .homes-body{
+        background-color: #fff;
+        padding: 20px;
+        .homes-titulo{
+            @include estilo-texto($fuente_titulos, 1.125rem, 600, $color_titulos)
+        }
+        .homes-caracteristicas{
+            padding-left: 0;
+
+            span{
+                @include estilo-texto($fuente_textos, .875rem, 400, $color_titulos);
+            }
+        } 
+        .homes-precio{
+            @include estilo-texto($fuente_titulos, 1rem, 600, $color_textos);
+        }
+    }
+    
+}

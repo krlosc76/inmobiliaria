@@ -1,0 +1,46 @@
+@mixin estilo-texto($font-family, $font-size, $font-weight, $color){
+    font-family: $font-family ;
+    font-size: $font-size ;
+    font-weight: $font-weight ;
+    color: $color;
+}
+
+@mixin hero($background-image, $color, $padding, $height){
+    position: relative;
+    background-image:$background-image; 
+    background-size: cover;
+    background-position: center;
+    color: $color;
+    text-align: center;
+    padding: $padding; 
+    height: $height;
+}
+
+@mixin overlay($background-color){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+}
+
+@mixin boton($background-color, $color, $border, $font-family, $font-size, $font-weight, $padding, $width, $border-radius, $background-hover, $color-hover, $borde-hover){
+    background-color: $background-color;
+    color: $color;
+    cursor: pointer;
+    display: inline-block;
+    border: $border;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    padding: $padding;
+    text-transform: uppercase;
+    width: $width;
+    border-radius: $border-radius;
+    &:hover{
+        background-color: $background-hover;
+        color: $color-hover;
+        border-color: $borde-hover ;
+    }
+}
