@@ -1,3 +1,4 @@
+CREATE DATABASE inmobiliaria;
 
 USE inmobiliaria;
 
@@ -11,8 +12,8 @@ CREATE TABLE usuarios (
     imagen VARCHAR(255)
 )
 ENGINE=InnoDb;
-INSERT INTO usuarios (email, password, rol)
-VALUES ('admin@admin.com', '$2y$10$tG2AW5rWras2nq5m7gNv7.03ySiJLWidKUIXbxx7Rp50w4qeuKh9q', 'administrador');
+INSERT INTO usuarios (nombre, email, password, rol)
+VALUES ('admin', 'admin@admin.com', '$2y$10$tG2AW5rWras2nq5m7gNv7.03ySiJLWidKUIXbxx7Rp50w4qeuKh9q', 'administrador');
 
 CREATE TABLE tipos (
     id INT AUTO_INCREMENT PRIMARY KEY,
