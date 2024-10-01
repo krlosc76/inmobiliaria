@@ -55,6 +55,44 @@ class Utils{
         }
         utils::deleteSession('tipo');
     }
-    
-
+    public static function deleteTipoAlert(){
+        if(isset($_SESSION['delete_tipo']) && $_SESSION['delete_tipo'] == 'complete'){
+            echo '<div class="alert alert-success " role="alert">¡Tipo de propiedad eliminado correctamente!</div>';
+        }else if(isset($_SESSION['delete_tipo']) && $_SESSION['delete_tipo'] == 'failed'){
+            echo '<div class=" alerta alert alert-danger " role="alert">¡No se pudo eliminar tipo de propiedad!</div>';
+        }
+        utils::deleteSession('delete_tipo');
+    }
+    public static function caracteristicaextAlert(){
+        if(isset($_SESSION['caracteristica_ex']) && $_SESSION['caracteristica_ex'] == 'completed'){
+            echo '<div class="alert alert-success " role="alert">¡Caracteristica creada correctamente!</div>';
+        }else if(isset($_SESSION['caracteristica_ex']) && $_SESSION['caracteristica_ex'] == 'failed'){
+            echo '<div class=" alerta alert alert-danger " role="alert">¡No se pudo crear caracteristica!</div>';
+        }
+        utils::deleteSession('caracteristica_ex');
+    }
+    public static function deleteCaracteristicaext(){
+        if(isset($_SESSION['delete_caracteristicaex']) && $_SESSION['delete_caracteristicaex'] == 'complete'){
+            echo '<div class="alert alert-success " role="alert">¡Caracteristica eliminada correctamente!</div>';
+        }else if(isset($_SESSION['delete_caracteristicaex']) && $_SESSION['delete_caracteristicaex'] == 'failed'){
+            echo '<div class=" alerta alert alert-danger " role="alert">¡No se pudo eliminar caracteristica!</div>';
+        }
+        utils::deleteSession('delete_caracteristicaex');
+    }
+    public static function caracteristicaintAlert(){
+        if(isset($_SESSION['caracteristica_int']) && $_SESSION['caracteristica_int'] == 'completed'){
+            echo '<div class="alert alert-success " role="alert">¡Caracteristica creada correctamente!</div>';
+        }else if(isset($_SESSION['caracteristica_int']) && $_SESSION['caracteristica_int'] == 'failed'){
+            echo '<div class=" alerta alert alert-danger " role="alert">¡No se pudo crear caracteristica!</div>';
+        }
+        utils::deleteSession('caracteristica_int');
+    }
+    public static function deleteCaracteristicaint(){
+        if(isset($_SESSION['delete_caracteristicaint']) && $_SESSION['delete_caracteristicaint'] == 'complete'){
+            echo '<div class="alert alert-success " role="alert">¡Caracteristica eliminada correctamente!</div>';
+        }else if(isset($_SESSION['delete_caracteristicaint']) && $_SESSION['delete_caracteristicaint'] == 'failed'){
+            echo '<div class=" alerta alert alert-danger " role="alert">¡No se pudo eliminar caracteristica!</div>';
+        }
+        utils::deleteSession('delete_caracteristicaint');
+    }
 }

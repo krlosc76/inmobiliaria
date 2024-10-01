@@ -17,15 +17,17 @@
     <section class="content">
        <!-- form start -->
        <?php Utils::tipoAlert();?>
+       <?php Utils::deleteTipoAlert();?>
+      <?php var_dump($_POST['tipo']); ?> 
       
        <!-- Tipos -->
         <?php
-        $action = base_url . "tipo/crear"; 
-        if (isset($_GET['id'])) { 
-            $action = base_url . "tipo/actualizar"; 
+        if(!isset($_GET['id'])){
+          $action = base_url . "tipo/crear"; 
+        }else{
+          $action = base_url . "tipo/actualizar"; 
         }
-        var_dump($_GET['id']);
-        var_dump($_POST['tipo']);
+        
         ?>
        <form id="form-properties" action="<?= $action ?>" method="post">
        <?php isset($_GET['id']) ? $tipo_actual = $update->fetch_object(): ''; ?>
@@ -66,7 +68,7 @@
                   <tr>
                     <td><a><?=$type->tipo;?></a></td>
                     <td><a href="<?= base_url ?>admin/getTipo&id=<?=$type->id?>" class="btn btn-info btn-sm" ><i class="fa-solid fa-pen mr-1"></i>Actualizar</a>
-                    <a type="button" class="btn btn-danger btn-sm" href=""><i class="fas fa-trash mr-1"></i>Eliminar</a>
+                    <a type="button" class="btn btn-danger btn-sm" href="<?= base_url ?>/tipo/eliminar&id=<?=$type->id?>"><i class="fas fa-trash mr-1"></i>Eliminar</a>
                     </td>
                   </tr>
                   <?php endwhile;?>  

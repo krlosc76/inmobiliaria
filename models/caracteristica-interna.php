@@ -1,7 +1,7 @@
 <?php
-class Tipo{
+class Caracteristica_interna{
     private $id;
-    private $tipo;
+    private $caracteristica;
     private $db;
 
     public function __construct() {
@@ -10,17 +10,17 @@ class Tipo{
     function getId() {
 		return $this->id;
 	}
-    function getTipo() {
-		return $this->tipo;
+    function getCaracteristica() {
+		return $this->caracteristica;
 	}
     function setId($id) {
 		$this->id = $id;
 	}
-    function setTipo($tipo) {
-		$this->tipo = $tipo;
+    function setCaracteristica($caracteristica) {
+		$this->caracteristica = $caracteristica;
 	}
     public function insert(){
-        $sql = "INSERT INTO tipos VALUES(NULL, '{$this->getTipo()}');";
+        $sql = "INSERT INTO caracteristicas_internas VALUES(NULL, '{$this->getCaracteristica()}');";
         $save = $this->db->query($sql);
 
        $result = false;
@@ -30,17 +30,17 @@ class Tipo{
        return $result;
     }
     public function read(){
-      $sql = "SELECT * FROM tipos ORDER BY id DESC";
+      $sql = "SELECT * FROM caracteristicas_internas ORDER BY id DESC";
       $read = $this->db->query($sql);
       return $read;
     }
     public function read_one(){
-      $sql = "SELECT * FROM tipos WHERE id={$this->id}";
+      $sql = "SELECT * FROM caracteristicas_internas WHERE id={$this->id}";
       $read_one = $this->db->query($sql);
       return $read_one;
     }
     public function actualizar(){
-      $sql = "UPDATE tipos SET tipo='{$this->getTipo()} 'WHERE id={$this->id}";
+      $sql = "UPDATE caracteristicas_internas SET caracteristica='{$this->getCaracteristica()} 'WHERE id={$this->id}";
       $update = $this->db->query($sql);
       
       $result = false;
@@ -50,7 +50,7 @@ class Tipo{
       return $result;
     }
     public function delete(){
-      $sql = "DELETE FROM tipos WHERE id={$this->id}";
+      $sql = "DELETE FROM caracteristicas_internas WHERE id={$this->id}";
       $delete = $this->db->query($sql);
   
       $result = false;

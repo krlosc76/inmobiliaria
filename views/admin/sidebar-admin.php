@@ -72,6 +72,18 @@
                   <p>Tipo de propiedad</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="<?=base_url?>admin/caracteristicaExterna" class="nav-link">
+                  <i class="fa-solid fa-dumbbell nav-icon"></i>
+                  <p>Caracteristicas Externas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?=base_url?>admin/caracteristicaInterna" class="nav-link">
+                  <i class="fa-solid fa-bath nav-icon"></i>
+                  <p>Caracteristicas Internas</p>
+                </a>
+              </li>
                 </ul>
               </li>
             </ul>

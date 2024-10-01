@@ -34,7 +34,38 @@ class TipoController{
             $type->setId($id);
             $type->setTipo($tipo);
             $update = $type->actualizar();
+            if($update){
+                $_SESSION['tipo_actualizado'] = 'completed';   
+            }else{
+                $_SESSION['tipo_actualizado'] = 'failed';  
+            }
+        }else{
+            $_SESSION['tipo_actualizado'] = 'failed';  
         }
         header("location:".base_url.'admin/tipo');
+    }
+    public function eliminar(){
+        if(isset($_SESSION['administrador'])){
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $tipo = new Tipo();
+                $tipo->setId($id);
+                
+                $delete = $tipo->delete();
+                if($delete){
+                    $_SESSION['delete_tipo'] = 'complete';
+                }else{
+                    $_SESSION['delete_tipo'] = 'failed';
+                }
+            }else{
+                $_SESSION['delete_tipo'] = 'failed';
+            }
+            
+            header('Location:'.base_url.'admin/tipo');
+        }else{
+            header("location:".base_url);
+            exit();
+        }
+	
     }
 }
